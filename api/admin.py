@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import Movie
 
 class MovieList(admin.ModelAdmin):
-    list_display = ('name', 'year', 'description', 'rating', 'movie_image')
-    list_filter = ('name', 'year', 'rating', 'movie_image')
+    list_display = ('name', 'director', 'year', 'description', 'rating', 'movie_image')
+    list_filter = ('name', 'director', 'year', 'rating', 'movie_image')
     search_fields = ('name', 'description')
     ordering = ['year']
 
